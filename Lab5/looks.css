@@ -1,0 +1,117 @@
+button {
+  display: inline-block;
+  color: green;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+  background-color: rgb(124, 73, 15);
+}
+button:hover {
+  background-color: rgb(9, 51, 5);
+}
+
+body{
+    background-color: darkolivegreen;
+}
+/*b. Text color*/
+h1{
+    color:darkkhaki; 
+    font-style: oblique;  
+    font-size:xxx-large;
+    text-align: center; 
+}
+
+h1.title  {
+  border: 10px solid rgb(1, 56, 11);
+  padding: 15px;
+  margin: 20px;
+  }
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+}
+
+p {
+    color:bisque;
+    font-style: oblique;
+    font-size: medium;
+    text-align: center;
+    border: 2px solid rgb(182, 91, 6);
+    padding: 10px;
+    margin:5px;
+}
+
+p.grades {
+    font-color: black;
+    font-style: oblique;
+    font-size: medium;
+    text-align: center;
+    border: 2px solid rgb(182, 91, 6);
+    padding: 10px;
+    margin:5px;
+}
+/*3. Include one table that is formatted with a border, margins and padding in your CSS file*/
+table{
+    margin: 50px;
+    border: 1px solid black;
+    width: 100%;
+    }
+
+th{ 
+    font-size: x-large;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    }
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    }
+/*5. Include headings, paragraphs, and images on every page formatted in your CSS file*/
+  
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    background: #3399ff;
+    padding: 20px;
+    width:fit-content;
+  }
+
+ul li {
+    font-size: larger;
+    margin: 5px;
+    list-style-type: square;
+    width:fit-content;
+  }
+
+.Navcenter {
+    position: fixed;
+    list-style-type: none;
+    margin-top: -30px;
+    margin-left: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(124, 73, 15);
+
+  }
+  
+#navitems {
+    float: left;
+  }
+
+  #navitems a {
+    display: inline-block;
+    color: green;
+    background: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+#navitems a:hover {
+    background-color: rgb(9, 51, 5);
+  }

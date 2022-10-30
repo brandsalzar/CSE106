@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--1) Allow a user to ask for a grade from the backend and display the grade, given the student name
+            2) Allow the user to see all students and grades
+            3) Allow a user to create a new student name and grade in the backend
+            4) Allow a user to edit a grade in the backend
+            5) Allow a user to delete a grade in the backend-->
+        <title>Homepage</title>
+        <link rel="stylesheet" href="looks.css">
+    </head>
+    <body>
+        <!--nav bar is going to go here-->
+        <ul class="Navcenter">
+            <li id="navitems"><a href="Lab 5.pdf">This opens the lab</a></li>
+        </ul>
+        
+        <h1 class="title">Lab 5 Excercises</h1>
+        <p>Click one of the many buttons below and lookup any student too. Give it a try!</p>
+        
+
+        <div id='grade-section'></div>
+            <h2>These are the grades:</h2>
+            <div>
+              <button onclick="fetchGrades()">All Grades & Students</button>
+            </div>
+            <div id='grade-container'>
+                <!--We are going to insert our our grades and names here-->
+                <p id='grades'></p>
+            </div>
+
+            <h2>These are the grades specific to:</h2>
+            <input id="text1" placeholder="Student Name">
+            <br>
+            <div>
+              <button onclick="fetchStudentGrade()">Specific Student</button>
+            </div>
+            <div id='grade-container'>
+                <p id='studentGrades'></p>
+            </div>
+
+            <h2>Creating a new Student and Grade:</h2>
+            <input id="text2" placeholder="Student Name">
+            <input id="text3" placeholder="Letter Grade">
+            <div>
+              <button onclick="newStudentGrade()">Add New Student & Grade</button>
+            </div>
+            <div id='grade-container'>
+                <p id='newStudentGrade'></p>
+            </div>
+
+            <h2>Editing Grades:</h2>
+            <input id="text4" placeholder="Student Name">
+            <input id="text5" placeholder=" New Letter Grade">
+            <div>
+              <button onclick="gradeChange()">Change Grade</button>
+            </div>
+            <div id='grade-container'>
+                <p id='newGrade'></p>
+            </div>
+
+            <h2>Deleting a Student:</h2>
+            <input id="text6" placeholder="Student Delete">
+            <input id="text7" placeholder="Grade Delete">
+
+            <div>
+              <button onclick="deleteStudentGrade()">Delete Grade</button>
+            </div>
+            <div id='grade-container'>
+                <p id='deleteStudentGrade'></p>
+            </div>
+        </div>
+        <script src='data.js'></script>
+        
+    </body>
+</html>
